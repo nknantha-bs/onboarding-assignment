@@ -3,7 +3,9 @@
 def create_response(data, status = 200)
   data = { 'response': data } if data.is_a?(String)
 
-  [status,
-   { 'Content-Type' => 'application/json' },
-   data.to_json]
+  [
+    status,
+    { 'Content-Type' => 'application/json' },
+    data.to_json
+  ]
 end

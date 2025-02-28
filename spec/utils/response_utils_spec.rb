@@ -7,9 +7,11 @@ RSpec.describe 'ResponseUtils' do
     it 'returns a valid response' do
       response = create_response('test')
       expect(response).to eq(
-        [200,
-         { 'Content-Type' => 'application/json' },
-         { 'response': 'test' }.to_json]
+        [
+          200,
+          { 'Content-Type' => 'application/json' },
+          { 'response': 'test' }.to_json
+        ]
       )
     end
   end
