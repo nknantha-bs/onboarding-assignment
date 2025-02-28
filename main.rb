@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require_relative 'game/game'
+require_relative 'game/game_play'
 
 if __FILE__ == $PROGRAM_NAME
-  game = Game.new
+  game = GamePlay.new
   game.run
 end

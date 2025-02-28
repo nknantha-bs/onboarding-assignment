@@ -9,7 +9,7 @@ bundle install
 
 ### Usage
 ```bash
-ruby main.py
+bundle exec ruby main.rb
 ```
 
 ### Test
